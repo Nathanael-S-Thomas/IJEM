@@ -1,0 +1,127 @@
+/* Reset and base styling */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+}
+
+/* App layout */
+.App {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+/* Header */
+.app-header {
+  background-color: #4A90E2;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.firm-logo {
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.firm-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Login form */
+.card-form {
+  background-color: white;
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-form h2 {
+  margin-bottom: 1.5rem;
+}
+
+.card-form input,
+.card-form select {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.card-form button {
+  padding: 10px 20px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.card-form button:hover {
+  background-color: #357ABD;
+}
+
+/* Dashboard cards */
+.dashboard {
+  padding: 2rem;
+}
+
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  min-width: 180px;
+  text-align: center;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Chart section */
+.chart-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.chart-container h3 {
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firm-name {
+    font-size: 1.2rem;
+  }
+}
